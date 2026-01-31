@@ -11,19 +11,168 @@
 </head>
 <body class="m-auto">
 
+    <nav class="w-96 bg-slate-950 z-100 fixed transition-all duration-200" id="menue">
+        <div class="p-3">
+            <div id="logo" class="flex justify-between">
+                <img src="https://www.knowledgehubnepal.com/frontend/images/logo.png" alt="logo" class="w-48">
+            </div>
+            <hr class="text-orange-400 mt-6">
+            <h4 class="text-orange-400 text-lg font-mono">NAVIGATION</h4>
+            <div class="text-white mt-5">
+                <ul class="gap-y-3 font-semibold font-mono flex flex-col">
+                    <a id="quickLinks" href="index.html" class="p-2"><li>HOME</li></a>
+                    <a id="quickLinks" href="courses.html" class="p-2"><li>COURSES</li></a>
+                    <a id="quickLinks" href="packages.html" class="p-2"><li class="">PACKAGES</li></a>
+                    <a href="about.html"><li class="p-2">ABOUT US</li></a>
+                    <a href="contact.html"><li class="p-2">CONTACT US</li></a>
+                </ul>
+                <a href="login.html"><button class="px-3 py-0.5 md:py-1 mt-5 text-lg font-bold rounded-xl bg-cyan-500 active:bg-cyan-300">Login</button></a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Nav Bar -->
+
+    <nav class="p-3 bg-slate-900 text-white h-24 w-full">
+        <div class="max-w-7xl mx-auto flex items-center justify-between">
+            <div id="logo">
+                <img src="https://www.knowledgehubnepal.com/frontend/images/logo.png" alt="logo" class="w-48">
+            </div>
+            <ul class="hidden xl:flex gap-20 font-semibold font-mono">
+                <a id="quickLinks" href="index.html"><li class="transition-all ease-in-out duration-300 cursor-pointer hover:text-cyan-500 hover:scale-110">HOME</li></a>
+                <a id="quickLinks" href="courses.html"><li class="transition-all ease-in-out duration-300 cursor-pointer hover:text-cyan-500 hover:scale-110">COURSES</li></a>
+                <a id="quickLinks" href="packages.html"><li class="transition-all ease-in-out duration-300 cursor-pointer hover:text-cyan-500 hover:scale-110">PACKAGES</li></a>
+                <a href="about.html"><li class="transition-all ease-in-out duration-300 cursor-pointer hover:text-cyan-500 hover:scale-110">ABOUT US</li></a>
+                <a href="contact.html"><li class="transition-all ease-in-out duration-300 cursor-pointer hover:text-cyan-500 hover:scale-110">CONTACT US</li></a>
+            </ul>
+            <div class="flex gap-5 items-center">
+                <a href="login.html"><button class="hidden xl:flex px-3 py-0.5 md:py-1 text-lg font-bold bg-cyan-500 rounded-4xl transition-all ease-in-out duration-300 hover:scale-105">Login</button></a>
+                <div class="flex xl:hidden" id="btn">
+                    <i class="fa-solid fa-bars text-3xl"></i>
+                </div>
+            </div>
+        </div>
+    </nav>
+
     <!-- Where are u? -->
 
-    <div class="max-w-7xl m-auto p-2">
-        <div class="flex bg-slate-100">
-            <a href="index.html" class="text-xl mx-3 font-bold"><span class="hover:underline">Home</span><i class="ri-home-2-line"></i> /</a><h3 class="text-xl xl:text-3xl font-bold underline text-orange-500 italic">Login</h3>
+    <div class="max-w-7xl m-auto p-2 mt-5">
+        <div class="flex h-6/12 items-center">
+            <a href="index.html" class="text-xl mx-3 font-bold"><span class="hover:underline">Home</span><i class="ri-home-2-line"></i> /</a><h3 class="text-xl xl:text-3xl font-bold underline text-orange-500 italic">Login </h3>
         </div>
     </div>
 
     <!-- Main -->
 
-    <main class="max-w-7xl m-auto p-2">
-        
+    <main class="max-w-7xl m-auto p-2 bg-red-400  justify-evenly hidden">
+        <div class="p-2 w-full">
+            <div class="grid justify-evenly">
+                <h3 class="text-2xl font-bold">Login <i class="ri-user-line"></i></h3>
+            </div>
+            <div class="my-5">
+                <form action="" class="bg-amber-300 text-center">
+                    <input type="text" placeholder="Email or Phone Number" class="w-72 py-2 px-5">
+                </form>
+            </div>
+        </div>
     </main>
+
+
+
+    <div class="max-w-7xl m-auto">
+        <div class="flex justify-evenly">
+            <div class="w-lg">
+                <form class="w-full m-auto bg-slate-50 p-6 rounded-lg shadow-md space-y-4">
+                    <h2 class="text-2xl font-semibold text-center"><i class="ri-login-box-line text-2xl"></i> Login</h2>
+                    <div class="flex justify-evenly max-w-5xl m-auto">
+                    <div>
+                        <img src="https://www.knowledgehubnepal.com/frontend/images/login.png" alt="loginImage" class="w-48">
+                    </div>
+                </div>
+                    <label for="No" class="block text-sm font-medium text-gray-700">Country</label>
+                    
+                    <select name="country_code" class="w-40 border border-gray-300 rounded-md px-3 py-1">
+                        <option value="+977">Nepal (+977)</option>
+                        <option value="+93">Afghanistan (+93)</option>
+                        <option value="+355">Albania (+355)</option>
+                        <option value="+1-684">American Samoa (+1-684)</option>
+                        <option value="+376">Andorra (+376)</option>
+                        <option value="+244">Angola (+244)</option>
+                        <option value="+1-264">Anguilla (+1-264)</option>
+                        <option value="+229">Benin (+229)</option>
+                        <option value="+1441">Bermuda (+1441)</option>
+                        <option value="+975">Bhutan (+975)</option>
+                        <option value="+591">Bolivia (+591)</option>
+                        <option value="+387">Bosnia & Herzegovina (+387)</option>
+                        <option value="+91">India (+91)</option>
+                        <option value="+62">Indonesia (+62)</option>
+                        <option value="+964">Iraq (+964)</option>
+                        <option value="+98">Iran (+98)</option>
+                        <option value="+353">Ireland (+353)</option>
+                        <option value="+972">Israel (+972)</option>
+                        <option value="+39">Italy (+39)</option>
+                        <option value="+971">United Arab Emirates (+971)</option>
+                        <option value="+44">United Kingdom (+44)</option>
+                        <option value="+1">United States (+1)</option>
+                        <option value="+84">Vietnam (+84)</option>
+                    </select>
+            
+                    <div>
+                        <div class="flex gap-x-1 items-center">
+                            <label for="email" class="block text-sm font-medium text-gray-700">Email <i class="ri-mail-line text-sm"></i> or Phone Number <i class="ri-phone-line"></i></label>
+                        </div>
+                        <input type="text" id="email" name="email" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-xl shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 " placeholder="Email or Phone Number" required/>
+                    </div>
+                  
+                    <div>
+                        <div class="flex gap-x-1 items-center">
+                            <label for="password" class="block text-sm font-medium text-gray-700">Password</label>
+                            <i class="ri-lock-2-line"></i>
+                        </div>
+                        <input type="text" id="password" name="password" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-xl shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500" placeholder="Password" required/>
+                    </div>
+                  
+                    <div class="flex items-center justify-between">
+                        <label class="flex items-center space-x-2">
+                            <input type="checkbox" name="remember" class="h-4 w-4 text-indigo-600 focus:ring-indigo-500 border-gray-300 rounded" />
+                            <span class="text-sm text-gray-600">Stayed Login</span>
+                        </label>
+                        <a href="#" class="text-sm text-indigo-600 hover:underline">Forgot Password?</a>
+                    </div>
+            
+                    <div>
+                        <div class="flex items-center my-4">
+                            <div class="grow border-t border-gray-300"></div>
+                            <span class="px-3 text-gray-500 text-xs">OR</span>
+                            <div class="grow border-t border-gray-300"></div>
+                        </div>
+                    </div>
+            
+                    <div class="mt-4 space-y-3">
+                        <button type="button" class="w-full flex items-center justify-center px-4 py-2 border border-gray-300 rounded-md shadow-sm bg-white hover:bg-gray-50 gap-x-1">
+                            <i class="ri-google-fill text-xl"></i>Continue with Google
+                        </button>
+                        <button type="button" class="w-full flex items-center justify-center px-4 py-2 border border-gray-300 rounded-md shadow-sm bg-white hover:bg-gray-50 gap-x-1">
+                            <i class="ri-facebook-circle-fill text-2xl"></i>Continue with Facebook
+                        </button>
+                        <button type="button" class="w-full flex items-center justify-center px-4 py-2 border border-gray-300 rounded-md shadow-sm bg-white hover:bg-gray-50 gap-x-1">
+                            <i class="ri-whatsapp-line text-xl"></i>Continue with Whats App
+                        </button>
+                        <button type="button" class="w-full flex items-center justify-center px-4 py-2 border border-gray-300 rounded-md shadow-sm bg-white hover:bg-gray-50 gap-x-1">
+                            <i class="ri-more-line font-semibold text-xl"></i>More Social Platforms
+                        </button>
+                    </div>
+                    <div class="flex justify-evenly">
+                        <button class="bg-indigo-700 hover:bg-indigo-600 text-white w-full py-2 rounded-xl">Next</button>
+                    </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    
+      
 
     <!-- Footer -->
 
@@ -49,10 +198,10 @@
                         <h3 class="text-white font-bold font-mono text-lg sm:text-xl text-center">Quick Links</h3>
                         <div class="px-5 grid grid-cols-1 mt-3">
                             <ul class="grid grid-cols-1 items-center gap-y-3">
-                                <a href="#"><li><i class="ri-arrow-right-line text-orange-400"></i> <span class="text-white font-semibold italic text-xs md:text-sm transition-all active:text-orange-500 duration-150 hover:text-orange-500 hover:underline">Home</span></li></a>
-                                <a href=""><li><i class="ri-arrow-right-line text-orange-400"></i> <span class="text-orange-500 underline font-semibold italic text-xs md:text-sm transition-all active:text-orange-500 duration-150 hover:text-orange-500 hover:underline">Courses</span></li></a>
+                                <a href="index.html"><li><i class="ri-arrow-right-line text-orange-400"></i> <span class="text-white font-semibold italic text-xs md:text-sm transition-all active:text-orange-500 duration-150 hover:text-orange-500 hover:underline">Home</span></li></a>
+                                <a href="courses.html"><li><i class="ri-arrow-right-line text-orange-400"></i> <span class="text-white font-semibold italic text-xs md:text-sm transition-all active:text-orange-500 duration-150 hover:text-orange-500 hover:underline">Courses</span></li></a>
                                 <a href="packages.html"><li><i class="ri-arrow-right-line text-orange-400"></i> <span class="text-white font-semibold italic text-xs md:text-sm transition-all active:text-orange-500 duration-150 hover:text-orange-500 hover:underline">Packages</span></li></a>
-                                <a href="#"><li><i class="ri-arrow-right-line text-orange-400"></i> <span class="text-white font-semibold italic text-xs md:text-sm transition-all active:text-orange-500 duration-150 hover:text-orange-500 hover:underline">About Us</span></li></a>
+                                <a href="about.html"><li><i class="ri-arrow-right-line text-orange-400"></i> <span class="text-white font-semibold italic text-xs md:text-sm transition-all active:text-orange-500 duration-150 hover:text-orange-500 hover:underline">About Us</span></li></a>
                                 <a href="https://www.knowledgehubnepal.com/"><li><i class="ri-arrow-right-line text-orange-400"></i> <span class="text-white font-semibold italic text-xs md:text-sm transition-all active:text-orange-500 duration-150 hover:text-orange-500 hover:underline">Go To Original Website</span></li></a>
                             </ul>
                         </div>
@@ -87,6 +236,15 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        const btn = document.getElementById('btn');
+        const menue = document.getElementById('menue');
+        menue.classList.add('hidden');
+        btn.addEventListener('click', function(){
+            menue.classList.toggle('hidden');
+        });
+    </script>
 
 </body>
 </html>

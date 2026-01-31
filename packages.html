@@ -11,7 +11,27 @@
 </head>
 <body class="m-auto">
 
-    <!-- Nav -->
+    <nav class="w-96 bg-slate-950 z-100 fixed " id="menue">
+        <div class="p-3">
+            <div id="logo" class="">
+                <img src="https://www.knowledgehubnepal.com/frontend/images/logo.png" alt="logo" class="w-48">
+            </div>
+            <hr class="text-orange-400 mt-6">
+            <h4 class="text-orange-400 text-lg font-mono">NAVIGATION</h4>
+            <div class="text-white mt-5">
+                <ul class="gap-y-3 font-semibold font-mono flex flex-col">
+                    <a id="quickLinks" href="index.html"><li class="p-2 text-white">HOME</li></a>
+                    <a id="quickLinks" href="courses.html"><li class="p-2">COURSES</li></a>
+                    <a id="quickLinks" href="packages.html" class="border-b-2 border-cyan-500"><li class="p-2 text-cyan-500 ml-2">PACKAGES</li></a>
+                    <a href="about.html"><li class="p-2">ABOUT US</li></a>
+                    <a href="contact.html"><li class="p-2">CONTACT US</li></a>
+                </ul>
+                <a href="login.html"><button class="px-3 py-0.5 md:py-1 mt-5 text-lg font-bold rounded-xl bg-cyan-500 active:bg-cyan-300">Login</button></a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Nav Bar -->
 
     <nav class="p-3 bg-slate-900 text-white h-24 w-full">
         <div class="max-w-7xl mx-auto flex items-center justify-between">
@@ -19,19 +39,16 @@
                 <img src="https://www.knowledgehubnepal.com/frontend/images/logo.png" alt="logo" class="w-48">
             </div>
             <ul class="hidden xl:flex gap-20 font-semibold font-mono">
-                <a href="index.html"><li class="transition-all ease-in-out duration-300 cursor-pointer hover:text-cyan-500 hover:scale-110">HOME</li></a>
-                <a href="courses.html"><li class="transition-all ease-in-out duration-300 cursor-pointer hover:text-cyan-500 hover:scale-110">COURSES</li></a>
-                <a href=""><li class="transition-all ease-in-out duration-300 cursor-pointer text-cyan-500 hover:text-cyan-500 hover:scale-110">PACKAGES</li></a>
-                <a href=""><li class="transition-all ease-in-out duration-300 cursor-pointer hover:text-cyan-500 hover:scale-110">ABOUT US</li></a>
-                <a href=""><li class="transition-all ease-in-out duration-300 cursor-pointer hover:text-cyan-500 hover:scale-110">CONTACT US</li></a>
+                <a id="quickLinks" href="index.html"><li class="transition-all ease-in-out duration-300 cursor-pointer hover:text-cyan-500 hover:scale-110">HOME</li></a>
+                <a id="quickLinks" href="courses.html"><li class="transition-all ease-in-out duration-300 cursor-pointer hover:text-cyan-500 hover:scale-110">COURSES</li></a>
+                <a id="quickLinks" href="packages.html"><li class="transition-all ease-in-out duration-300 cursor-pointer text-cyan-500 hover:scale-110">PACKAGES</li></a>
+                <a href="about.html"><li class="transition-all ease-in-out duration-300 cursor-pointer hover:text-cyan-500 hover:scale-110">ABOUT US</li></a>
+                <a href="contact.html"><li class="transition-all ease-in-out duration-300 cursor-pointer hover:text-cyan-500 hover:scale-110">CONTACT US</li></a>
             </ul>
             <div class="flex gap-5 items-center">
-                <div class="h-7 w-7 border-2 border-white rounded-full flex items-center justify-center">
-                    <i class="fa-regular fa-user"></i>
-                </div>
-                <a href="login.html"><button class="px-0.5 py-0.5 md:px-3 md:py-1 text-lg font-bold bg-cyan-500 rounded-4xl transition-all ease-in-out duration-300 hover:scale-105">Login</button></a>
-                <div class="flex xl:hidden">
-                    <i class="fa-solid fa-bars text-2xl"></i>
+                <a href="login.html"><button class="hidden xl:flex px-3 py-0.5 md:py-1 text-lg font-bold bg-cyan-500 rounded-4xl transition-all ease-in-out duration-300 hover:scale-105">Login</button></a>
+                <div class="flex xl:hidden" id="btn">
+                    <i class="fa-solid fa-bars text-3xl"></i>
                 </div>
             </div>
         </div>
@@ -47,7 +64,7 @@
 
     <!-- Main -->
 
-    <main>
+    <main class="my-5">
         <div class="max-w-7xl m-auto p-2">
             <div class="flex flex-col items-center justify-center my-5">
                 <h3 class="font-semibold text-xl md:text-2xl lg:text-3xl 2xl:text-4xl font-mono bg-linear-to-r from-blue-700 via-cyan-600 to-purple-700 text-transparent bg-clip-text">Our Top Packages</h3>
@@ -69,7 +86,7 @@
                             </ul>
                             <div class="h-14 bg-linear-to-r from-blue-100 to-blue-500 flex justify-between items-center rounded-r-2xl w-full sm:w-72">
                                 <h3 class="text-3xl font-bold font-mono ml-5 md:text-2xl">$8.99</h3>
-                                <button class="bg-orange-300 p-1 mr-2 md:mr-3 rounded-2xl text-2xl md:text-xl md:p-1 xl:p-1 font-bold flex items-center justify-center cursor-not-allowed">Buy Now <i class="ri-arrow-right-line text-3xl"></i></button>
+                                <a href="package-login.html"><button class="bg-orange-300 p-1 mr-2 md:mr-3 rounded-2xl text-2xl md:text-xl md:p-1 xl:p-1 font-bold flex items-center justify-center">Buy Now <i class="ri-arrow-right-line text-3xl"></i></button></a>
                             </div>
                         </div>
                     </div>
@@ -90,7 +107,7 @@
                             </ul>
                             <div class="h-14 bg-linear-to-r from-blue-100 to-blue-500 flex justify-between items-center rounded-r-2xl w-72">
                                 <h3 class="text-3xl font-bold font-mono ml-5 md:text-2xl">$12.99</h3>
-                                <button class="bg-orange-300 p-1 mr-2 md:mr-3 rounded-2xl text-2xl md:text-xl md:p-1 xl:p-1 font-bold flex items-center justify-center">Buy Now <i class="ri-arrow-right-line text-3xl"></i></button>
+                                <a href="package-login.html"><button class="bg-orange-300 p-1 mr-2 md:mr-3 rounded-2xl text-2xl md:text-xl md:p-1 xl:p-1 font-bold flex items-center justify-center">Buy Now <i class="ri-arrow-right-line text-3xl"></i></button></a>
                             </div>
                         </div>
                     </div>
@@ -113,7 +130,7 @@
                             </ul>
                             <div class="h-14 bg-linear-to-r from-blue-100 to-blue-500 flex justify-between items-center rounded-r-2xl w-72">
                                 <h3 class="text-3xl font-bold font-mono ml-5 md:text-2xl">$19.99</h3>
-                                <button class="bg-orange-300 p-1 mr-2 md:mr-3 rounded-2xl text-2xl md:text-xl md:p-1 xl:p-1 font-bold flex items-center justify-center">Buy Now <i class="ri-arrow-right-line text-3xl"></i></button>
+                                <a href="package-login.html"><button class="bg-orange-300 p-1 mr-2 md:mr-3 rounded-2xl text-2xl md:text-xl md:p-1 xl:p-1 font-bold flex items-center justify-center">Buy Now <i class="ri-arrow-right-line text-3xl"></i></button></a>
                             </div>
                         </div>
                     </div>
@@ -136,7 +153,7 @@
                             </ul>
                             <div class="h-14 bg-linear-to-r from-blue-100 to-blue-500 flex justify-between items-center rounded-r-2xl w-72">
                                 <h3 class="text-3xl font-bold font-mono ml-5 md:text-2xl">$29.99</h3>
-                                <button class="bg-orange-300 p-1 mr-2 md:mr-3 rounded-2xl text-2xl md:text-xl md:p-1 xl:p-1 font-bold flex items-center justify-center">Buy Now <i class="ri-arrow-right-line text-3xl"></i></button>
+                                <a href="package-login.html"><button class="bg-orange-300 p-1 mr-2 md:mr-3 rounded-2xl text-2xl md:text-xl md:p-1 xl:p-1 font-bold flex items-center justify-center">Buy Now <i class="ri-arrow-right-line text-3xl"></i></button></a>
                             </div>
                         </div>
                     </div>
@@ -156,13 +173,82 @@
                             </ul>
                             <div class="h-14 bg-linear-to-r from-blue-100 to-blue-500 flex justify-between items-center rounded-r-2xl w-72">
                                 <h3 class="text-3xl font-bold font-mono ml-5 md:text-2xl">$99.99</h3>
-                                <button class="bg-orange-300 p-1 mr-2 md:mr-3 rounded-2xl text-2xl md:text-xl md:p-1 xl:p-1 font-bold flex items-center justify-center">Buy Now <i class="ri-arrow-right-line text-3xl"></i></button>
+                                <a href="package-login.html"><button class="bg-orange-300 p-1 mr-2 md:mr-3 rounded-2xl text-2xl md:text-xl md:p-1 xl:p-1 font-bold flex items-center justify-center">Buy Now <i class="ri-arrow-right-line text-3xl"></i></button></a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        <!-- Learning Path -->
+
+    <div class="max-w-7xl m-auto p-2">
+        <div class="flex flex-col items-center justify-center my-10">
+            <h3 class="font-semibold text-xl md:text-2xl lg:text-3xl 2xl:text-4xl font-mono bg-linear-to-r from-blue-700 via-cyan-600 to-purple-700 text-transparent bg-clip-text">Choose Your Learning Path</h3>
+            <div class="h-1 w-20 md:w-36 border-b-4 border-yellow-500 rounded-2xl "></div>
+        </div>
+        <div class="grid grid-cols-1 mt-5 md:grid-cols-3">
+            <div class="bg-slate-100 border-t-5 border-sky-500 w-90 m-5 h-140 p-5 md:py-14 rounded-2xl transform transition-all duration-300 hover:-translate-y-3 hover:shadow-lg">
+                <div class="text-center">
+                    <h3 class="font-bold italic text-3xl bg-clip-text text-transparent bg-linear-to-r from-indigo-500 via-cyan-500 to-blue-600">Starter</h3>
+                    <p><i class="ri-money-rupee-circle-line text-3xl"></i> <span class="text-4xl font-mono font-semibold">999</span></p>
+                    <h6 class="font-serif mt-0.5">Perfect For Beginners</h6>
+                </div>
+                <div class=" mt-7">
+                    <ul class="space-y-5 text-xl not-italic font-medium">
+                        <li><i class="ri-check-line text-cyan-500"></i> 5 Core Courses</li>
+                        <li><i class="ri-check-line text-cyan-500"></i> Offer To Next Purchase</li>
+                        <li><i class="ri-check-line text-cyan-500"></i> 3 Months Access</li>
+                        <li><i class="ri-check-line text-cyan-500"></i> Basic Support</li>
+                    </ul>
+                </div>
+                <div class="my-5">
+                    <a href="package-login.html"><button class="bg-linear-120 from-indigo-500 via-sky-500 to-blue-600 text-white hover:bg-indigo-600 w-full py-2 rounded-md">Get Started</button></a>
+                </div>
+            </div>
+
+            <div class="bg-slate-100 border-t-6 border-purple-600 w-90 mx-5 h-160 p-5 md:py-14 rounded-2xl transform transition-all duration-300 hover:-translate-y-3 hover:shadow-lg">
+                <div class="text-center">
+                    <h3 class="font-bold italic text-3xl bg-clip-text text-transparent bg-linear-to-r from-purple-600 via-indigo-700 to-pink-500">Enterprise</h3>
+                    <p><i class="ri-money-rupee-circle-line text-3xl"></i> <span class="text-4xl font-mono font-semibold">4999</span></p>
+                    <h6 class="font-serif mt-0.5">Complete mastery</h6>
+                </div>
+                <div class=" mt-7">
+                    <ul class="space-y-5 text-xl not-italic font-medium">
+                        <li><i class="ri-check-line text-purple-500"></i> All Courses</li>
+                        <li><i class="ri-check-line text-purple-500"></i> VIP Support</li>
+                        <li><i class="ri-check-line text-purple-500"></i> Lifetime Access</li>
+                        <li><i class="ri-check-line text-purple-500"></i> Certificate</li>
+                        <li><i class="ri-check-line text-purple-500"></i> Unlimited Sessions</li>
+                        <li><i class="ri-check-line text-purple-500"></i> Career Coaching</li>
+                        <li><i class="ri-check-line text-purple-500"></i> Job Placement</li>
+                    </ul>
+                </div>
+                <div class="my-5">
+                    <a href="package-login.html"><button class="bg-linear-120 from-purple-600 via-indigo-700 to-pink-500 text-white hover:bg-indigo-600 w-full py-2 rounded-lg">Get Started</button></a>
+                </div>
+            </div>
+            
+            <div class="bg-slate-100 border-t-5 border-green-600 w-90 p-2 m-5 h-140 px-6 py-10 md:py-14 flex flex-col justify-evenly rounded-3xl transform transition-all duration-300          hover:-translate-y-3 hover:shadow-lg">
+                <div class="text-center">
+                    <h3 class="font-bold italic text-3xl bg-clip-text text-transparent bg-linear-to-r from-green-500 via-green-600 to-green-500">Professional</h3>
+                    <p><i class="ri-money-rupee-circle-line text-3xl"></i> <span class="text-4xl font-mono font-semibold">2999</span></p>
+                    <h6 class="font-serif mt-0.5">For serious learners</h6>
+                </div>
+                <div class=" mt-7">
+                    <ul class="space-y-5 text-xl not-italic font-medium">
+                        <li><i class="ri-check-line text-green-500"></i> 5 Core Courses</li>
+                        <li><i class="ri-check-line text-green-500"></i> Offer To Next Purchase</li>
+                        <li><i class="ri-check-line text-green-500"></i> 3 Months Access</li>
+                        <li><i class="ri-check-line text-green-500"></i> Basic Support</li>
+                    </ul>
+                </div>
+                <div class="my-5">
+                    <a href="package-login.html"><button class="bg-linear-150 from-green-500 via-green-600 to-green-500 text-white hover:bg-linear-150 w-full py-2 rounded-md">Get Started</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
     </main>
 
     <!-- Footer -->
@@ -192,7 +278,7 @@
                                 <a href="index.html"><li><i class="ri-arrow-right-line text-orange-400"></i> <span class="text-white font-semibold italic text-xs md:text-sm transition-all active:text-orange-500 duration-150 hover:text-orange-500 hover:underline">Home</span></li></a>
                                 <a href="courses.html"><li><i class="ri-arrow-right-line text-orange-400"></i> <span class="text-white font-semibold italic text-xs md:text-sm transition-all active:text-orange-500 duration-150 hover:text-orange-500 hover:underline">Courses</span></li></a>
                                 <a href="packages.html"><li><i class="ri-arrow-right-line text-orange-400"></i> <span class="text-orange-500 underline font-semibold italic text-xs md:text-sm transition-all active:text-orange-500 duration-150 hover:text-orange-500 hover:underline">Packages</span></li></a>
-                                <a href="#"><li><i class="ri-arrow-right-line text-orange-400"></i> <span class="text-white font-semibold italic text-xs md:text-sm transition-all active:text-orange-500 duration-150 hover:text-orange-500 hover:underline">About Us</span></li></a>
+                                <a href="about.html"><li><i class="ri-arrow-right-line text-orange-400"></i> <span class="text-white font-semibold italic text-xs md:text-sm transition-all active:text-orange-500 duration-150 hover:text-orange-500 hover:underline">About Us</span></li></a>
                                 <a href="https://www.knowledgehubnepal.com/" target="_blank"><li><i class="ri-arrow-right-line text-orange-400"></i> <span class="text-white font-semibold italic text-xs md:text-sm transition-all active:text-orange-500 duration-150 hover:text-orange-500 hover:underline">Go To Original Website</span></li></a>
                             </ul>
                         </div>
@@ -227,6 +313,15 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        const btn = document.getElementById('btn');
+        const menue = document.getElementById('menue');
+        menue.classList.add('hidden');
+        btn.addEventListener('click', function(){
+            menue.classList.toggle('hidden');
+        });
+    </script>
 
 </body>
 </html>
