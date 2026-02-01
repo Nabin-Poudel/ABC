@@ -11,9 +11,9 @@
 </head>
 <body class="m-auto">
 
-    <nav class="w-96 bg-slate-950 z-100 fixed " id="menue">
+    <nav class="w-80 bg-slate-950 z-100 fixed transition-all duration-200" id="menue">
         <div class="p-3">
-            <div id="logo" class="">
+            <div id="logo" class="flex justify-between">
                 <img src="https://www.knowledgehubnepal.com/frontend/images/logo.png" alt="logo" class="w-48">
             </div>
             <hr class="text-orange-400 mt-6">
@@ -22,9 +22,9 @@
                 <ul class="gap-y-3 font-semibold font-mono flex flex-col">
                     <a id="quickLinks" href="index.html" class="p-2"><li>HOME</li></a>
                     <a id="quickLinks" href="courses.html" class="p-2"><li>COURSES</li></a>
-                    <a id="quickLinks" href="packages.html"><li class="p-2">PACKAGES</li></a>
+                    <a id="quickLinks" href="packages.html" class="p-2"><li class="">PACKAGES</li></a>
                     <a href="about.html"><li class="p-2">ABOUT US</li></a>
-                    <li class="p-2">CONTACT US</li>
+                    <a href="contact.html"><li class="p-2">CONTACT US</li></a>
                 </ul>
                 <a href="login.html"><button class="px-3 py-0.5 md:py-1 mt-5 text-lg font-bold rounded-xl bg-cyan-500 active:bg-cyan-300">Login</button></a>
             </div>
@@ -43,7 +43,7 @@
                 <a id="quickLinks" href="courses.html"><li class="transition-all ease-in-out duration-300 cursor-pointer hover:text-cyan-500 hover:scale-110">COURSES</li></a>
                 <a id="quickLinks" href="packages.html"><li class="transition-all ease-in-out duration-300 cursor-pointer hover:text-cyan-500 hover:scale-110">PACKAGES</li></a>
                 <a href="about.html"><li class="transition-all ease-in-out duration-300 cursor-pointer hover:text-cyan-500 hover:scale-110">ABOUT US</li></a>
-                <li class="transition-all ease-in-out duration-300 cursor-pointer text-cyan-500 hover:scale-110">CONTACT US</li>
+                <a href="contact.html"><li class="transition-all ease-in-out duration-300 cursor-pointer hover:text-cyan-500 hover:scale-110">CONTACT US</li></a>
             </ul>
             <div class="flex gap-5 items-center">
                 <a href="login.html"><button class="hidden xl:flex px-3 py-0.5 md:py-1 text-lg font-bold bg-cyan-500 rounded-4xl transition-all ease-in-out duration-300 hover:scale-105">Login</button></a>
@@ -57,99 +57,77 @@
     <!-- Where are u? -->
 
     <div class="max-w-7xl m-auto p-2 mt-5">
-        <div class="flex h-6/12 items">
-            <a href="index.html" class="text-xl mx-3 font-bold"><span class="hover:underline">Home</span><i class="ri-home-2-line"></i> /</a><h3 class="text-xl xl:text-3xl font-bold underline text-orange-500 italic">Contact Us</h3>
+        <div class="flex h-6/12 items-center">
+            <a href="index.html" class="text-xl mx-3 font-bold"><span class="hover:underline">Home</span><i class="ri-home-2-line"></i> /</a><h3 class="text-xl xl:text-3xl font-bold underline text-orange-500 italic">3D Desgining</h3>
         </div>
     </div>
 
     <!-- Main -->
-
-    <main class="p-2 max-w-7xl m-auto my-5">
-        <div class="grid justify-evenly grid-cols-1 gap-x-5 gap-y-3 sm:grid-cols-2 lg:grid-cols-3">
-            <div class="px-6 py-10 md:py-14 bg-slate-100 flex flex-col border-2 border-slate-200 justify-evenly rounded-3xl transform transition-all duration-300 hover:-translate-y-3 hover:shadow-lg  ">
-                <div class="flex justify-evenly">
-                    <img src="https://www.knowledgehubnepal.com/frontend/images/contact-us-phone-icon.svg" alt="Phone">
-                </div>
-                <div class="flex justify-evenly">
-                    <h3 class="text-2xl italic font-semibold">Contact Phone Number</h3>
-                </div>
-                <div class="flex justify-evenly">
-                    <p>(+977) 9709103611</p>
-                </div>
-            </div>
-            <div class="px-6 py-10 md:py-14 bg-slate-100 flex flex-col border-2 border-slate-200 justify-evenly m-1 rounded-3xl transform transition-all duration-300 hover:-translate-y-3 hover:shadow-lg">
-                <div class="flex justify-evenly">
-                    <img src="https://www.knowledgehubnepal.com/frontend/images/contact-us-mail-icon.svg" alt="email">
-                </div>
-                <div class="flex justify-evenly">
-                    <h3 class="text-2xl italic font-semibold">Our Email Address</h3>
-                </div>
-                <div class="flex justify-evenly">
-                    <p>info.knowledgehubnepal@gmail.com</p>
-                </div>
-            </div>
-            <div class="px-6 py-10 md:py-14 bg-slate-100 flex flex-col border-2 border-slate-200 justify-evenly m-1 rounded-3xl transform transition-all duration-300 hover:-translate-y-3 hover:shadow-lg">
-                <div class="flex justify-evenly">
-                    <img src="https://www.knowledgehubnepal.com/frontend/images/contact-us-location-icon.svg" alt="location">
-                </div>
-                <div class="flex justify-evenly">
-                    <h3 class="text-2xl italic font-semibold">Our Location</h3>
-                </div>
-                <div class="flex justify-evenly">
-                    <p>Balwa Ward No.10 Mahottari,Nepal</p>
-                </div>
-            </div>
-        </div>
-
-        <!-- Message -->
-
-        <div class="p-2 grid grid-cols-1 md:grid-cols-2 my-2">
-            <div class="hidden md:flex overflow-hidden">
-                <img src="https://www.knowledgehubnepal.com/frontend/images/contact.jpg" alt="message" class="object-cover">
+      
+    <main class="m-auto max-w-7xl p-2 flex justify-evenly bg-slate-100 mt-5">
+        <div>
+            <div class="flex justify-evenly">
+                <img src="https://cdn.motiondesign.school/uploads/2024/09/promo_page_v1.jpg" alt="graphics" class="w-50 sm:w-100 rounded-xl">
             </div>
             <div>
-                <form class="w-full m-auto p-6 rounded-lg shadow-md space-y-4">
-                    <h2 class="text-2xl font-semibold text-center">Need More Help?</h2>
-                    <div>
-                        <div class="flex gap-x-1 items-center">
-                            <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
-                        </div>
-                        <input type="text" id="email" name="email" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-xl shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 " placeholder="Email" required/>
-                    </div>
-                  
-                    <div>
-                        <div class="flex gap-x-1 items-center">
-                            <label for="password" class="block text-sm font-medium text-gray-700">Full Name</label>
-                        </div>
-                        <input type="text" id="password" name="password" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-xl shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500" placeholder="Full Name" required />
-                    </div>
-
-                    <div>
-                        <div class="flex gap-x-1 items-center">
-                            <label for="password" class="block text-sm font-medium text-gray-700">Phone Number</label>
-                        </div>
-                        <input type="text" id="password" name="password" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-xl shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500" placeholder="Phone Number" required />
-                    </div>
-
-                    <div>
-                        <div class="flex gap-x-1 items-center">
-                            <label for="password" class="block text-sm font-medium text-gray-700">Your Massage</label>
-                        </div>
-                        <input type="text" id="password" name="password" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-xl shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500" placeholder="Your Massage" required />
-                    </div>
-                    <div class="flex">
-                        <button class="flex items-center justify-evenly bg-indigo-700 hover:bg-indigo-600 cursor-pointer text-white w-44 py-2 rounded-xl">Send My Messages <i class="ri-arrow-right-line "></i></button>
-                    </div>
-                </form>
+                <h3 class="text-center sm:text-lg md:text-xl font-bold">3D Desgining</h3>
+            </div>
+            <div class="mt-2 p-2">
+                <h3 class="font-semibold text-xl">What is 3D Desgining?</h3>
+                <div class="p-2">
+                    <p>
+                        3D designing is the process of creating three-dimensional digital models that can be used in animation, visual effects, product design, architecture, gaming, and virtual environments. It combines creative vision with technical skills to build lifelike representations of objects, characters, and spaces that can be viewed and manipulated from any angle. To bring these ideas to life, professionals and students rely on powerful 3D design software: Autodesk Maya is widely recognized as an industry standard for complex modeling, animation, and visual effects in film and games, while Blender offers a comprehensive, free, open-source suite for modeling, sculpting, rendering, and animation that suits beginners and professionals alike. SketchUp provides an intuitive interface popular in architecture and product design, and Tinkercad serves as an accessible, browser-based tool for beginners to learn foundational 3D modeling concepts. Advanced sculpting and detailed character modeling are often created in tools like ZBrush, while CAD-focused applications such as SolidWorks are used for precision modeling in engineering and product development. Together, these tools form the backbone of modern 3D design workflows across creative and technical industries.
+                    </p>
+                </div>
+                <div class="mt-2">
+                    <h3 class="font-semibold text-2xl text-center">What is in This Course That I Should Enroll?</h3>
+                </div>
+                <div class="p-2">
+                    <h3 class="font-semibold text-xl sm:text-2xl mt-5 mb-2">Core 3D Design Skills & Concepts</h3>
+                    <ul class="p-2">
+                        <li class="text-lg"><i class="fa-solid fa-circle text-xs"></i> Fundamentals of 3D Modeling</li>
+                        <li class="text-lg"><i class="fa-solid fa-circle text-xs"></i> Surface, Solid & Polygon Modeling</li>
+                        <li class="text-lg"><i class="fa-solid fa-circle text-xs"></i> Textures & Materials</li>
+                        <li class="text-lg"><i class="fa-solid fa-circle text-xs"></i> Lighting & Rendering</li>
+                    </ul>
+                </div>
+                <div class="p-2">
+                    <h3 class="font-semibold text-xl sm:text-2xl mt-2 mb-2">Industry-Standard Software & Tools</h3>
+                    <ul class="p-2">
+                        <li class="text-lg"><i class="fa-solid fa-circle text-xs"></i> Blender</li>
+                        <li class="text-lg"><i class="fa-solid fa-circle text-xs"></i> Autodesk Maya</li>
+                        <li class="text-lg"><i class="fa-solid fa-circle text-xs"></i> ZBrush</li>
+                        <li class="text-lg"><i class="fa-solid fa-circle text-xs"></i> SketchUp & CAD Tools</li>
+                    </ul>
+                </div>
+                <div class="p-2">
+                    <h3 class="font-semibold text-xl sm:text-2xl mt-2 mb-2">Animation, Rigging & Motion</h3>
+                    <ul class="p-2">
+                        <li class="text-lg"><i class="fa-solid fa-circle text-xs"></i> Rigging Basics</li>
+                        <li class="text-lg"><i class="fa-solid fa-circle text-xs"></i> Animation Techniques</li>
+                        <li class="text-lg"><i class="fa-solid fa-circle text-xs"></i> Motion & Dynamics Essentials</li>
+                    </ul>
+                </div>
+                <div class="p-2">
+                    <h3 class="font-semibold text-xl sm:text-2xl mt-2 mb-2">Visualization & Professional Output</h3>
+                    <ul class="p-2">
+                        <li class="text-lg"><i class="fa-solid fa-circle text-xs"></i> Architectural & Product Visualization</li>
+                        <li class="text-lg"><i class="fa-solid fa-circle text-xs"></i> Portfolio & Project Development</li>
+                        <li class="text-lg"><i class="fa-solid fa-circle text-xs"></i> Preparing Assets for Production</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="flex items-center justify-evenly">
+                <a href="package-login.html"><button class="flex items-center"><i class="text-center ri-play-circle-fill text-4xl mt-5 cursor-pointer transition-all duration-200 hover:text-orange-500">Enroll Now</i></button></a>
             </div>
         </div>
     </main>
 
     <!-- Footer -->
 
-    <footer class="">
+    <footer>
         <div class="bg-slate-950">
-            <div class="max-w-7xl m-auto grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 p-2">
+            <div class=" max-w-7xl m-auto grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 p-2">
                 <div class="">
                     <div class="w-full">
                         <div class="">
@@ -170,9 +148,9 @@
                         <div class="px-5 grid grid-cols-1 mt-3">
                             <ul class="grid grid-cols-1 items-center gap-y-3">
                                 <a href="index.html"><li><i class="ri-arrow-right-line text-orange-400"></i> <span class="text-white font-semibold italic text-xs md:text-sm transition-all active:text-orange-500 duration-150 hover:text-orange-500 hover:underline">Home</span></li></a>
-                                <a href="courses.html"><li><i class="ri-arrow-right-line text-orange-400"></i> <span class="text-white font-semibold italic text-xs md:text-sm transition-all active:text-orange-500 duration-150 hover:text-orange-500 hover:underline">Courses</span></li></a>
+                                <a href="courses.html"><li><i class="ri-arrow-right-line text-orange-400"></i> <span class="font-semibold italic text-xs md:text-sm transition-all active:text-orange-500 duration-150 text-orange-500 underline">Courses</span></li></a>
                                 <a href="packages.html"><li><i class="ri-arrow-right-line text-orange-400"></i> <span class="text-white font-semibold italic text-xs md:text-sm transition-all active:text-orange-500 duration-150 hover:text-orange-500 hover:underline">Packages</span></li></a>
-                                <a href="about.html"><li><i class="ri-arrow-right-line text-orange-400"></i> <span class="text-white  font-semibold italic text-xs md:text-sm transition-all active:text-orange-500 duration-150 hover:text-orange-500 hover:underline">About Us</span></li></a>
+                                <a href="about.html"><li><i class="ri-arrow-right-line text-orange-400"></i> <span class="text-white font-semibold italic text-xs md:text-sm transition-all active:text-orange-500 duration-150 hover:text-orange-500 hover:underline">About Us</span></li></a>
                                 <a href="https://www.knowledgehubnepal.com/"><li><i class="ri-arrow-right-line text-orange-400"></i> <span class="text-white font-semibold italic text-xs md:text-sm transition-all active:text-orange-500 duration-150 hover:text-orange-500 hover:underline">Go To Original Website</span></li></a>
                             </ul>
                         </div>

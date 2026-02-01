@@ -10,26 +10,102 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.min.css">
 </head>
 <body class="m-auto">
-    <nav class="p-3 bg-slate-900 text-white h-24 w-full">
-        <div class="max-w-7xl mx-auto">
-            <h3 class="text-2xl font-mono font-bold">Feedback</h3>
+
+    <nav class="w-80 bg-slate-950 z-100 fixed" id="menue">
+        <div class="p-3">
+            <div id="logo" class="">
+                <img src="https://www.knowledgehubnepal.com/frontend/images/logo.png" alt="logo" class="w-48">
+            </div>
+            <hr class="text-orange-400 mt-6">
+            <h4 class="text-orange-400 text-lg font-mono">NAVIGATION</h4>
+            <div class="text-white mt-5">
+                <ul class="gap-y-3 font-semibold font-mono flex flex-col">
+                    <a id="quickLinks" href="index.html" class="p-2"><li>HOME</li></a>
+                    <a id="quickLinks" href="courses.html" class="p-2"><li>COURSES</li></a>
+                    <a id="quickLinks" href="packages.html"><li class="p-2">PACKAGES</li></a>
+                    <a href="about.html"><li class="p-2">ABOUT US</li></a>
+                    <a href="contact.html"><li class="p-2">CONTACT US</li></a>
+                </ul>
+                <a href="login.html"><button class="px-3 py-0.5 md:py-1 mt-5 text-lg font-bold rounded-xl bg-cyan-500 active:bg-cyan-300">Login</button></a>
+            </div>
         </div>
     </nav>
 
-    <main class="bg-slate-200 max-w-7xl m-auto">
-        <div>
-            <h3 class="text-xl font-mono md:text-4xl text-center">How is this WebPage?</h3>
+    <!-- Nav Bar -->
+
+    <nav class="p-3 bg-slate-900 text-white h-24 w-full">
+        <div class="max-w-7xl mx-auto flex items-center justify-between">
+            <div id="logo">
+                <img src="https://www.knowledgehubnepal.com/frontend/images/logo.png" alt="logo" class="w-48">
+            </div>
+            <ul class="hidden xl:flex gap-20 font-semibold font-mono">
+                <a id="quickLinks" href="index.html"><li class="transition-all ease-in-out duration-300 cursor-pointer hover:text-cyan-500 hover:scale-110">HOME</li></a>
+                <a id="quickLinks" href="courses.html"><li class="transition-all ease-in-out duration-300 cursor-pointer hover:text-cyan-500 hover:scale-110">COURSES</li></a>
+                <a id="quickLinks" href="packages.html"><li class="transition-all ease-in-out duration-300 cursor-pointer hover:text-cyan-500 hover:scale-110">PACKAGES</li></a>
+                <a href="about.html"><li class="transition-all ease-in-out duration-300 cursor-pointer hover:text-cyan-500 hover:scale-110">ABOUT US</li></a>
+                <a href="contact.html"><li class="transition-all ease-in-out duration-300 cursor-pointer hover:text-cyan-500 hover:scale-110">CONTACT US</li></a>
+            </ul>
+            <div class="flex gap-5 items-center">
+                <a href="login.html"><button class="hidden xl:flex px-3 py-0.5 md:py-1 text-lg font-bold bg-cyan-500 rounded-4xl transition-all ease-in-out duration-300 hover:scale-105">Login</button></a>
+                <div class="flex xl:hidden" id="btn">
+                    <i class="fa-solid fa-bars text-3xl"></i>
+                </div>
+            </div>
         </div>
-        <div class="bg-slate-200 text-xl md:text-3xl text-center mt-10">
-            Give Your Feedback
+    </nav>
+
+    <!-- Where are u? -->
+
+    <div class="max-w-7xl m-auto p-2 mt-5">
+        <div class="flex h-6/12 items-center">
+            <a href="index.html" class="text-xl mx-3 font-bold"><span class="hover:underline">Home</span><i class="ri-home-2-line"></i> /</a><h3 class="text-xl xl:text-2xl font-bold underline text-orange-500 italic">Feedback Section</h3>
         </div>
-        <div class="bg-slate-200 text-xl md:text-3xl text-center mt-10">
-            Your Feedback Will Not Register.... Dont Open this page on Mobile
+    </div>
+
+    <!-- feedback main -->
+
+    <main class="max-w-7xl m-auto p-2">
+        <div class="p-2 grid grid-cols-1 md:grid-cols-2 my-2">
+            <div class="overflow-hidden">
+                <img src="feedbacksection.webp" alt="message" class="object-cover">
+            </div>
+            <div>
+                <form class="w-full m-auto p-6 rounded-lg shadow-md space-y-4">
+                    <h2 class="text-2xl font-semibold text-center">Your Feedback</h2>
+                    <div>
+                        <div class="flex gap-x-1 items-center">
+                            <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
+                        </div>
+                        <input type="text" id="email" name="email" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-xl shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 " placeholder="Email" required/>
+                    </div>
+                  
+                    <div>
+                        <div class="flex gap-x-1 items-center">
+                            <label for="password" class="block text-sm font-medium text-gray-700">Full Name</label>
+                        </div>
+                        <input type="text" id="password" name="password" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-xl shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500" placeholder="Full Name" required />
+                    </div>
+
+                    <div>
+                        <div class="flex gap-x-1 items-center">
+                            <label for="password" class="block text-sm font-medium text-gray-700">Phone Number</label>
+                        </div>
+                        <input type="text" id="password" name="password" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-xl shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500" placeholder="Phone Number" required />
+                    </div>
+
+                    <div>
+                        <div class="flex gap-x-1 items-center">
+                            <label for="password" class="block text-sm font-medium text-gray-700">Your Feedback</label>
+                        </div>
+                        <input type="text" id="password" name="password" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-xl shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500" placeholder="Your Feedback" required />
+                    </div>
+                    <div class="flex">
+                        <button class="flex items-center justify-evenly bg-indigo-700 hover:bg-indigo-600 cursor-pointer text-white w-44 py-2 rounded-xl">Send My Feedback <i class="ri-arrow-right-line "></i></button>
+                    </div>
+                </form>
+            </div>
         </div>
-        <div class="mt-20">
-            <input type="text" placeholder="Your Feedback Here" class="bg-white border-2 px-48 py-4">
-            <button class="bg-white px-6 py-4 text-black cursor-pointer transition-all duration-150 hover:bg-red-500">Sumbit</button>
-        </div>
+    </main>
     </main>
 
     <!-- Footer -->
@@ -94,6 +170,15 @@
             </div>
         </div>
     </footer>
+      
+    <script>
+        const btn = document.getElementById('btn');
+        const menue = document.getElementById('menue');
+        menue.classList.add('hidden');
+        btn.addEventListener('click', function(){
+            menue.classList.toggle('hidden');
+        });
+    </script>
 
 </body>
 </html>
